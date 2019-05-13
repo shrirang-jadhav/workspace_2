@@ -107,7 +107,7 @@ def save_model(model, model_filepath):
     Save the model to a Python pickle
     Args:
         model: Trained model
-        model_filepath: Path where to save the model
+        model_filepath: Path where to save the model which we will access in run.py later
     """
     with open(model_filepath, 'wb') as file:
         pickle.dump(model, file)
